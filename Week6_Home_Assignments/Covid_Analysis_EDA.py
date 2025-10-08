@@ -49,7 +49,7 @@ class EDA:
         scalar = StandardScaler()
         scaled_data = scalar.fit_transform(original_df)
         columns_from_df = original_df.columns
-        scaled_df = pd.DataFrame(scaled_data,columns=columns_from_df)
+        scaled_df = pd.DataFrame(data=scaled_data,index=original_df.index,columns=original_df.columns)
         return scaled_df
     
     def plot_histograms(self,df, title_prefix):
@@ -97,6 +97,7 @@ if __name__ == "__main__":
 
     # Histogram after Normalization
     Covid_EDA.plot_histograms(scaled_df,"Before Scaling")
+
 
 
   
