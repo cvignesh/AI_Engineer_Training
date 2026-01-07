@@ -1,0 +1,5 @@
+Test ID,Test Name,Module,Status,Automation Tool
+TC001,Verify Login with Valid Credentials,Authentication,Pass,NA
+TC002,Verify Password Reset Flow,Authentication,Pass,NA
+TC003,Verify Homepage Load Time,Performance,Pass,Selenium
+TC004,Verify API Response Status,API Testing,Pass,Playwright
